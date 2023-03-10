@@ -1,5 +1,67 @@
 <head th:fragment="head">
     <style>
+        .mars-page .feed-deimos {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 950px;
+        }
+
+        .cbox {
+            border-radius: 8px;
+            position: relative;
+            margin-bottom: 20px;
+            min-height: 100px;
+            line-height: 24px;
+            padding-top: 12px;
+            overflow-wrap: break-word;
+        }
+
+        .feed-container {
+            width: 650px;
+            display: block;
+            align-items: center;
+        }
+
+        .feed-side-menu .menu .menu-item-con .f_fd_df_gdf {
+            scrollbar-width: none;
+            position: sticky;
+            top: 60px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            max-height: calc(100vh - 150px);
+            max-width: 250px;
+        }
+
+        {
+            scrollbar-width: none
+        ;
+            position: sticky
+        ;
+            top: 60px
+        ;
+            overflow-x: hidden
+        ;
+            overflow-y: scroll
+        ;
+            max-height: calc(100vh - 150px)
+        ;
+            max-width: 250px
+        ;
+        }
+
+        .float-container {
+            border: 3px solid #fff;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .float-child {
+            width: 50%;
+            float: left;
+            padding: 20px;
+            border: 2px solid red;
+        }
+
         .news-form {
             max-width: 600px;
             margin: 50px auto;
@@ -58,6 +120,9 @@
             background-color: #3e8e41;
         }
 
+
+
+
     </style>
     <meta charset="utf-8">
     <title>News 24</title>
@@ -105,7 +170,6 @@
         </div>
     </div>
 </nav>
-
 
 
 <footer th:fragment="footer">
